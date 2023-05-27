@@ -20,7 +20,7 @@ Use o [Composer](https://getcomposer.org/) para instalar o Meu Pacote.
 composer require OliviaUuid/uuid
 `
 # Exemplo de Uso
-`
+`<?php
 require_once 'vendor/autoload.php';
 use MeuPacote\UUID\UUIDService;
 use MeuPacote\UUID\RandomUUIDGenerator;
