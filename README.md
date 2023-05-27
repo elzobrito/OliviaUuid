@@ -20,14 +20,27 @@ Use o [Composer](https://getcomposer.org/) para instalar o Meu Pacote.
 composer require elzobrito/olivia-uuid
 `
 # Exemplo de Uso
-`<?php
-require_once 'vendor/autoload.php';
-use MeuPacote\UUID\UUIDService;
-use MeuPacote\UUID\RandomUUIDGenerator;
-$generator = new RandomUUIDGenerator();
-$service = new UUIDService($generator);
-$uuid = $service->generateUUID();
-echo $uuid;
+`
+<?php
+
+namespace OliviaUuid;
+
+use OliviaUuid\uuid\RandomUUIDGenerator;
+use OliviaUuid\uuid\UUIDService;
+
+require_once  __DIR__ . '/vendor/autoload.php';
+
+class Index
+{
+    public function __construct()
+    {
+        $generator = new RandomUUIDGenerator();
+        $service = new UUIDService($generator);
+        $uuid = $service->generateUUID();
+        echo $uuid;
+    }
+}
+new Index();
 `
 # Contribuição
 
