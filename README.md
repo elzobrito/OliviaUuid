@@ -16,11 +16,11 @@ Meu Pacote é uma biblioteca PHP para geração de UUIDs de forma simples e efic
 
 Use o [Composer](https://getcomposer.org/) para instalar o Meu Pacote.
 
-```bash
+`bash
 composer require meu-pacote/uuid
-
+`
 # Exemplo de Uso
-
+`
 require_once 'vendor/autoload.php';
 
 use MeuPacote\UUID\UUIDService;
@@ -31,7 +31,7 @@ $service = new UUIDService($generator);
 $uuid = $service->generateUUID();
 
 echo $uuid;
-
+`
 # Contribuição
 
 Contribuições são bem-vindas! Se você encontrou um bug, tem alguma sugestão ou deseja implementar uma nova funcionalidade, abra uma issue.
