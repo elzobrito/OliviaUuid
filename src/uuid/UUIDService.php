@@ -1,8 +1,6 @@
 <?php
 
-
 namespace OliviaUuid\uuid;
-
 class UUIDService {
     private $generator;
 
