@@ -19,29 +19,6 @@ Use o [Composer](https://getcomposer.org/) para instalar o Meu Pacote.
 `bash
 composer require elzobrito/olivia-uuid
 `
-# Exemplo de Uso
-`
-<?php
-
-namespace OliviaUuid;
-
-use OliviaUuid\uuid\RandomUUIDGenerator;
-use OliviaUuid\uuid\UUIDService;
-
-require_once  __DIR__ . '/vendor/autoload.php';
-
-class Index
-{
-    public function __construct()
-    {
-        $generator = new RandomUUIDGenerator();
-        $service = new UUIDService($generator);
-        $uuid = $service->generateUUID();
-        echo $uuid;
-    }
-}
-new Index();
-`
 # Contribuição
 
 Contribuições são bem-vindas! Se você encontrou um bug, tem alguma sugestão ou deseja implementar uma nova funcionalidade, abra uma issue.
